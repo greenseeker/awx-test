@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: "{{ target }}"
   connection: local
   tasks:
     - name: Wait a minute
