@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Wait a minute
+      wait_for:
+        timeout: 60
+
+    - debug: var=ansible_facts
+...
